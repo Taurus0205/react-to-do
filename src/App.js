@@ -61,12 +61,14 @@ function App() {
         <input
           className="todo-input"
           type="text"
-          placeholder="What needs to be done?"
+          placeholder="What needs to be done? (except PUBG)"
           onKeyUp={handleKeyUpInput}
           onChange={(evt) => {
             if (
               evt.target.value.trim() === "to play PUBG" ||
-              evt.target.value.trim() === "PUBG"
+              evt.target.value.trim() === "PUBG" ||
+              evt.target.value.trim() === "to play pubg" ||
+              evt.target.value.trim() === "pubg"
             ) {
               elModal.current.classList.add("modal--active");
               evt.target.value = null;
