@@ -1,0 +1,43 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.todo-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-heading {
+  text-align: center;
+  color: #333;
+}
+
+.todo-input {
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.todo-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
